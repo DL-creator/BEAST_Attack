@@ -10,7 +10,7 @@ In this implementation:
 - The attacker attempts to recover the plaintext by brute-forcing a set of known possible messages.
 - The known-plaintext attack leverages the predictability of IVs and CBC properties to identify the correct message.
 
-> This is a simplified educational model of the BEAST attack, not a full browser-based exploit.
+This is a simplified educational model of the BEAST attack, not a full browser-based exploit.
 
 ## File Structure
 
@@ -37,7 +37,7 @@ node test.js 10
 ```
 This will simulate the attack with 10 random known messages and test whether the attacker can recover the correct one.
 
-### What to Expect - (Output)
+### What to Expect 
 You’ll see logs showing:
 - The real message index
 - The IV and leaked ciphertext
