@@ -18,15 +18,12 @@ In this implementation:
 - `attacker.js` – Contains the BEAST attack logic to deduce which message was encrypted.
 - `test.js` – Runs a test scenario using a list of known messages and triggers the attack.
 
-## How to Run
+## Requirements
+- Node.js 
 
-### 1. Install Node.js (if not already installed)
-Download and install from: https://nodejs.org
+## How To Run The Attack
 
-### 2. Clone the repository or place the files together
-Ensure the files `server.js`, `attacker.js`, and `test.js` are in the same directory.
-
-### 3. Run the attack
+### The commands
 From a terminal, navigate to the directory and run:
 ```bash
 node test.js
@@ -40,7 +37,7 @@ node test.js 10
 ```
 This will simulate the attack with 10 random known messages and test whether the attacker can recover the correct one.
 
-### 4. What to Expect - (Output)
+### What to Expect - (Output)
 You’ll see logs showing:
 - The real message index
 - The IV and leaked ciphertext
